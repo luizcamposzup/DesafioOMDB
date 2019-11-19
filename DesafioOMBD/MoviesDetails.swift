@@ -15,7 +15,8 @@ class MoviesDetails: UIViewController {
     @IBOutlet weak var movieTitleLbl: UILabel!
 
     @IBOutlet weak var movieNoteLbl: UILabel!
-    @IBOutlet weak var movieSynopsisTextView: UITextView!
+    
+    @IBOutlet weak var movieSynopsisLbl: UILabel!
     
     var movie : Film?
     
@@ -30,7 +31,7 @@ class MoviesDetails: UIViewController {
         movieImageView.image = movie?.image
         movieTitleLbl.text = movie?.title
         movieNoteLbl.text = "\(movie?.note  ?? 0)"
-        movieSynopsisTextView.text = movie?.synopsis
+        movieSynopsisLbl.text = movie?.synopsis
         
     }
 
